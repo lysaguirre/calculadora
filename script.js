@@ -24,4 +24,13 @@ buttons.forEach((item) => {
 
 })
 
-// 2.29.42
+const ThemeTBtn = document.querySelector(".t-toggler")
+const calculator = document.querySelector(".calculator")
+
+let isDark = true;
+
+ThemeTBtn.onclick = () => {
+    calculator.classList.toggle("dark")
+    ThemeTBtn.classList.toggle("active")
+    isDark = false;
+};
